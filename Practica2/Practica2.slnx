@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="../Practica2.BLL/Practica2.BLL.csproj" Id="8d2f6806-6d44-4ed3-9933-1066fbcc7011" />
+  <Project Path="../Practica2.DAL/Practica2.DAL.csproj" Id="6884a6d1-044c-42a5-8518-5ee4eb65c115" />
   <Project Path="Practica2.csproj" />
 </Solution>
