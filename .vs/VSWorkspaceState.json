@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Practica2"
+    "\\Practica2",
+    "\\Practica2.BLL"
   ],
-  "SelectedNode": "\\Practica2\\Practica2.slnx",
+  "SelectedNode": "\\Practica2.BLL\\MapeoClases.cs",
   "PreviewInSolutionExplorer": false
 }
