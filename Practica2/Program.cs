@@ -1,6 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Practica2.BLL;
+using Practica2.BLL.Service.Categoria;
+using Practica2.BLL.Service.Producto;
 using Practica2.DAL.Data;
+using Practica2.DAL.Repository;
+using Practica2.DAL.Repository.Categoria;
+using Practica2.DAL.Repository.Producto;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,15 +24,25 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //Inyección de dependencias para repositorios, servicios, etc.
 
 //// Repositorios
-//builder.Services.AddScoped<ICarroRepositorio, CarroRepositorio>();
-//builder.Services.AddScoped<IDuennoRepositorio, DuennoRepositorio>();
+
+// Repositorio Generico
+builder.Services.AddScoped(
+    typeof(IRepositorioGenerico<>),
+    typeof(RepositorioGenerico<>));
+
+
+// Repositorios Especificos (no requeridos, sólo para cambios de comportamiento a futuro)
+builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepository>();
+
+builder.Services.AddScoped<IProductoRepositorio, ProductoRepository>();
+
 
 ////Servicios
-//builder.Services.AddScoped<ICarroServicio, CarroServicio>();
-//builder.Services.AddScoped<IDuennoServicio, DuennoServicio>();
+builder.Services.AddScoped<ICategoriaServicio, CategoriaServicio>();
+builder.Services.AddScoped<IProductoServicio, ProductoServicio>();
 
 //// Servicios Terceros
-//builder.Services.AddAutoMapper(cfg => { }, typeof(MapeoClases)); // Directamente desde la documentación
+builder.Services.AddAutoMapper(cfg => { }, typeof(MapeoClases)); //Mapeo de Clases - Automapper
 
 
 var app = builder.Build();
