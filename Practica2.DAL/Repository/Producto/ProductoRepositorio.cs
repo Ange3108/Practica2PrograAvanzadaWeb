@@ -6,9 +6,9 @@ using System.Text;
 namespace Practica2.DAL.Repository.Producto
 
 {
-    public class ProductoRepository : RepositorioGenerico<Entities.Producto>,IProductoRepositorio
+    public class ProductoRepositorio : RepositorioGenerico<Entities.Producto>,IProductoRepositorio
     {
-        public ProductoRepository(
+        public ProductoRepositorio(
             ApplicationDbContext context)
             : base(context)
         {

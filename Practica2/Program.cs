@@ -32,9 +32,8 @@ builder.Services.AddScoped(
 
 
 // Repositorios Especificos (no requeridos, sólo para cambios de comportamiento a futuro)
-builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepository>();
-
-builder.Services.AddScoped<IProductoRepositorio, ProductoRepository>();
+builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
+builder.Services.AddScoped<IProductoRepositorio, ProductoRepositorio>();
 
 
 ////Servicios
