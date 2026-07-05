@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using Microsoft.EntityFrameworkCore;
 namespace Practica2.DAL.Entities
 {
     public partial class Producto
@@ -9,7 +6,7 @@ namespace Practica2.DAL.Entities
 
         public int IdProducto { get; set; }
 
-        public string Nombre { get; set; }
+        public required string Nombre { get; set; }
 
         public decimal Precio { get; set; }
 

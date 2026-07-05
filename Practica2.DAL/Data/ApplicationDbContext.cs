@@ -1,15 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Practica2.DAL.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Practica2.DAL.Data
 {
     public partial class ApplicationDbContext : DbContext
     {
-
-
         public ApplicationDbContext()
         {
         }

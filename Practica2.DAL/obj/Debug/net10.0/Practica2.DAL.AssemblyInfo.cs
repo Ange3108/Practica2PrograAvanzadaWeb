@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Practica2.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ede3bcaccc5fe407c20236de9c8708f3e53149c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7926dfc879b601962db5c72ec57615acea41c39f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Practica2.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Practica2.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
