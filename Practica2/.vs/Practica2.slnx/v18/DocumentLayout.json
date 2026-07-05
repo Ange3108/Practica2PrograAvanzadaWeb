@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6884A6D1-044C-42A5-8518-5EE4EB65C115}|..\\Practica2.DAL\\Practica2.DAL.csproj|c:\\users\\jabad\\source\\repos\\practica2prograavanzadaweb\\practica2.dal\\repository\\irepositoriogenerico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D2F6806-6D44-4ED3-9933-1066FBCC7011}|..\\Practica2.BLL\\Practica2.BLL.csproj|c:\\users\\jabad\\source\\repos\\practica2prograavanzadaweb\\practica2.bll\\mapeoclases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +18,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IRepositorioGenerico.cs",
-              "DocumentMoniker": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.DAL\\Repository\\IRepositorioGenerico.cs",
-              "RelativeDocumentMoniker": "..\\Practica2.DAL\\Repository\\IRepositorioGenerico.cs",
-              "ToolTip": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.DAL\\Repository\\IRepositorioGenerico.cs",
-              "RelativeToolTip": "..\\Practica2.DAL\\Repository\\IRepositorioGenerico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "MapeoClases.cs",
+              "DocumentMoniker": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.BLL\\MapeoClases.cs",
+              "RelativeDocumentMoniker": "..\\Practica2.BLL\\MapeoClases.cs",
+              "ToolTip": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.BLL\\MapeoClases.cs",
+              "RelativeToolTip": "..\\Practica2.BLL\\MapeoClases.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T02:37:21.212Z",
+              "WhenOpened": "2026-07-05T03:14:59.073Z",
               "EditorCaption": ""
             },
             {
