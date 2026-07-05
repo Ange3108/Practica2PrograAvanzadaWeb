@@ -1,24 +1,32 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Practica2.BLL.DTO;
 using Practica2.BLL.Service.Producto;
+using Practica2.BLL.Service.Categoria;
 
 namespace Practica2.Controllers
 {
     public class ProductoController : Controller
     {
-
         private readonly IProductoServicio _productoServicio;
+        private readonly ICategoriaServicio _categoriaServicio;
 
         public ProductoController(
-            IProductoServicio productoServicio)
+            IProductoServicio productoServicio,
+            ICategoriaServicio categoriaServicio)
         {
             _productoServicio = productoServicio;
+            _categoriaServicio = categoriaServicio;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var categorias = await _categoriaServicio.GetCategorias();
+
+            ViewBag.Categorias = categorias.Dato;
+
             return View();
         }
+
 
         public async Task<IActionResult> GetProductos()
         {
