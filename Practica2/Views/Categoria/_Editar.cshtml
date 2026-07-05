@@ -1,0 +1,94 @@
+﻿@model Practica2.BLL.DTO.CategoriaDTO
+
+<div class="modal fade"
+     id="modalEditarCategoria"
+     tabindex="-1"
+     aria-labelledby="labelModalEditarCategoria"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow">
+
+            <div class="modal-header bg-primary text-white">
+
+                <h5 class="modal-title"
+                    id="labelModalEditarCategoria">
+                    Editar Categoría
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form id="formEditarCategoria"
+                      asp-action="UpdateCategoria"
+                      asp-controller="Categoria"
+                      method="post">
+
+                    @Html.AntiForgeryToken()
+
+                    <input asp-for="IdCategoria"
+                           type="hidden" />
+
+                    <div class="mb-3">
+
+                        <label asp-for="Nombre"
+                               class="form-label">
+                            Nombre
+                        </label>
+
+                        <input asp-for="Nombre"
+                               class="form-control" />
+
+                        <span asp-validation-for="Nombre"
+                              class="text-danger">
+                        </span>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label asp-for="Descripcion"
+                               class="form-label">
+                            Descripción
+                        </label>
+
+                        <textarea asp-for="Descripcion"
+                                  class="form-control">
+                        </textarea>
+
+                        <span asp-validation-for="Descripcion"
+                              class="text-danger">
+                        </span>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+
+                <button type="button"
+                        class="btn btn-primary"
+                        id="btnEditarCategoria">
+                    Guardar cambios
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

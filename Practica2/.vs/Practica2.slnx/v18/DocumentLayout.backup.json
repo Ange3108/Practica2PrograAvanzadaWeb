@@ -1,7 +1,18 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2F6806-6D44-4ED3-9933-1066FBCC7011}|..\\Practica2.BLL\\Practica2.BLL.csproj|c:\\users\\jabad\\source\\repos\\practica2prograavanzadaweb\\practica2.bll\\service\\categoria\\categoriaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D2F6806-6D44-4ED3-9933-1066FBCC7011}|..\\Practica2.BLL\\Practica2.BLL.csproj|c:\\users\\jabad\\source\\repos\\practica2prograavanzadaweb\\practica2.bll\\service\\producto\\productoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\jabad\\source\\repos\\practica2prograavanzadaweb\\practica2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +20,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,6 +65,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriaServicio.cs",
+              "DocumentMoniker": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.BLL\\Service\\Categoria\\CategoriaServicio.cs",
+              "RelativeDocumentMoniker": "..\\Practica2.BLL\\Service\\Categoria\\CategoriaServicio.cs",
+              "ToolTip": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.BLL\\Service\\Categoria\\CategoriaServicio.cs",
+              "RelativeToolTip": "..\\Practica2.BLL\\Service\\Categoria\\CategoriaServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T04:58:08.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductoServicio.cs",
+              "DocumentMoniker": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.BLL\\Service\\Producto\\ProductoServicio.cs",
+              "RelativeDocumentMoniker": "..\\Practica2.BLL\\Service\\Producto\\ProductoServicio.cs",
+              "ToolTip": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2.BLL\\Service\\Producto\\ProductoServicio.cs",
+              "RelativeToolTip": "..\\Practica2.BLL\\Service\\Producto\\ProductoServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T04:57:09.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\jabad\\source\\repos\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-05T04:39:52.739Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -65,14 +65,71 @@ namespace Practica2.BLL.Service.Producto
             return respuesta;
         }
 
-        public Task<RespuestaDTO<ProductoDTO>> CreateProducto(ProductoDTO producto)
+
+        public async Task<RespuestaDTO<ProductoDTO>> CreateProducto(
+            ProductoDTO producto)
         {
-            throw new NotImplementedException();
+            var respuesta = new RespuestaDTO<ProductoDTO>();
+
+            if (producto == null)
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "Producto inválido";
+                respuesta.codigo = 400;
+
+                return respuesta;
+            }
+
+            var entity = _mapper.Map<Practica2.DAL.Entities.Producto>(producto);
+
+            _productoRepositorio.AgregarAsync(entity);
+
+            if (!await _productoRepositorio.SaveChangesAsync())
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "No se pudo crear el producto";
+                respuesta.codigo = 500;
+
+                return respuesta;
+            }
+
+            respuesta.Dato = producto;
+
+            return respuesta;
         }
 
-        public Task<RespuestaDTO<ProductoDTO>> UpdateProducto(ProductoDTO producto)
+
+        public async Task<RespuestaDTO<ProductoDTO>> UpdateProducto(
+            ProductoDTO producto)
         {
-            throw new NotImplementedException();
+            var respuesta = new RespuestaDTO<ProductoDTO>();
+
+            if (producto == null)
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "Producto inválido";
+                respuesta.codigo = 400;
+
+                return respuesta;
+            }
+
+            var entity = _mapper.Map<Practica2.DAL.Entities.Producto>(producto);
+
+            _productoRepositorio.ActualizarAsync(entity);
+
+            if (!await _productoRepositorio.SaveChangesAsync())
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "No se pudo actualizar el producto";
+                respuesta.codigo = 500;
+
+                return respuesta;
+            }
+
+            respuesta.Dato = producto;
+
+            return respuesta;
         }
+
     }
 }

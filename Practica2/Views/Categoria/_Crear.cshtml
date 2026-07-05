@@ -1,0 +1,82 @@
+﻿@model Practica2.BLL.DTO.CategoriaDTO
+
+<div class="modal fade"
+     id="modalCrearCategoria"
+     tabindex="-1"
+     aria-labelledby="labelModalCrearCategoria"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="labelModalCrearCategoria">
+                    Nueva Categoría
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="formCrearCategoria"
+                      asp-action="CreateCategoria"
+                      asp-controller="Categoria"
+                      method="post">
+
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        <label asp-for="Nombre" class="form-label">
+                            Nombre
+                        </label>
+
+                        <input asp-for="Nombre"
+                               class="form-control" />
+
+                        <span asp-validation-for="Nombre"
+                              class="text-danger">
+                        </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Descripcion"
+                               class="form-label">
+                            Descripción
+                        </label>
+
+                        <textarea asp-for="Descripcion"
+                                  class="form-control"></textarea>
+
+                        <span asp-validation-for="Descripcion"
+                              class="text-danger">
+                        </span>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+
+                <button type="button"
+                        class="btn btn-success"
+                        id="btnGuardarCategoria">
+                    Guardar
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

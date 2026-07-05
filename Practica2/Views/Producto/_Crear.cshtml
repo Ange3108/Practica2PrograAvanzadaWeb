@@ -1,0 +1,109 @@
+﻿@model Practica2.BLL.DTO.ProductoDTO
+
+<div class="modal fade"
+     id="modalCrearProducto"
+     tabindex="-1"
+     aria-labelledby="labelModalCrearProducto"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="labelModalCrearProducto">
+                    Nuevo Producto
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="formCrearProducto"
+                      asp-action="CreateProducto"
+                      asp-controller="Producto"
+                      method="post">
+
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        <label asp-for="Nombre" class="form-label"></label>
+
+                        <input asp-for="Nombre"
+                               class="form-control" />
+
+                        <span asp-validation-for="Nombre"
+                              class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Precio" class="form-label"></label>
+
+                        <input asp-for="Precio"
+                               type="number"
+                               step="0.01"
+                               class="form-control" />
+
+                        <span asp-validation-for="Precio"
+                              class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Stock" class="form-label"></label>
+
+                        <input asp-for="Stock"
+                               type="number"
+                               class="form-control" />
+
+                        <span asp-validation-for="Stock"
+                              class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="IdCategoria" class="form-label"></label>
+
+                        <select asp-for="IdCategoria" class="form-select">
+                            <option value="">-- Seleccione una categoría --</option>
+
+                            @if (ViewBag.Categorias != null)
+                            {
+                                foreach (var categoria in ViewBag.Categorias)
+                                {
+                                    <option value="@categoria.IdCategoria">
+                                        @categoria.Nombre
+                                    </option>
+                                }
+                            }
+                        </select>
+
+                        <span asp-validation-for="IdCategoria"
+                              class="text-danger"></span>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+
+                <button type="submit"
+                        form="formCrearProducto"
+                        class="btn btn-success">
+                    Guardar
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

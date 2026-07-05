@@ -21,9 +21,4 @@
     <ProjectReference Include="..\Practica2.BLL\Practica2.BLL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Categoria\" />
-    <Folder Include="Views\Producto\" />
-  </ItemGroup>
-
 </Project>

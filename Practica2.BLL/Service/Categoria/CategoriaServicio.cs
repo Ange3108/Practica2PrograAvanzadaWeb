@@ -72,14 +72,71 @@ namespace Practica2.BLL.Service.Categoria
             return respuesta;
         }
 
-        public Task<RespuestaDTO<CategoriaDTO>> CreateCategoria(CategoriaDTO categoria)
+
+        public async Task<RespuestaDTO<CategoriaDTO>> CreateCategoria(
+            CategoriaDTO categoria)
         {
-            throw new NotImplementedException();
+            var respuesta = new RespuestaDTO<CategoriaDTO>();
+
+            if (categoria == null)
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "Categoría inválida";
+                respuesta.codigo = 400;
+
+                return respuesta;
+            }
+
+            var entity = _mapper.Map<Practica2.DAL.Entities.Categoria>(categoria);
+
+            _categoriaRepositorio.AgregarAsync(entity);
+
+            if (!await _categoriaRepositorio.SaveChangesAsync())
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "No se pudo crear la categoría";
+                respuesta.codigo = 500;
+
+                return respuesta;
+            }
+
+            respuesta.Dato = categoria;
+
+            return respuesta;
         }
 
-        public Task<RespuestaDTO<CategoriaDTO>> UpdateCategoria(CategoriaDTO categoria)
+
+
+        public async Task<RespuestaDTO<CategoriaDTO>> UpdateCategoria(
+            CategoriaDTO categoria)
         {
-            throw new NotImplementedException();
+            var respuesta = new RespuestaDTO<CategoriaDTO>();
+
+            if (categoria == null)
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "Categoría inválida";
+                respuesta.codigo = 400;
+
+                return respuesta;
+            }
+
+            var entity = _mapper.Map<Practica2.DAL.Entities.Categoria>(categoria);
+
+            _categoriaRepositorio.ActualizarAsync(entity);
+
+            if (!await _categoriaRepositorio.SaveChangesAsync())
+            {
+                respuesta.esCorrecto = false;
+                respuesta.mensaje = "No se pudo actualizar la categoría";
+                respuesta.codigo = 500;
+
+                return respuesta;
+            }
+
+            respuesta.Dato = categoria;
+
+            return respuesta;
         }
     }
 }
