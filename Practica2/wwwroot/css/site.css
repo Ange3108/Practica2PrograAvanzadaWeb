@@ -1,3 +1,125 @@
+:root {
+    --azul-marino: #071A2F;
+    --azul-marino-2: #0B2E59;
+    --turquesa: #00B8C8;
+    --verde: #17B26A;
+    --verde-hover: #12945A;
+    --negro: #111827;
+    --gris: #F4F7FA;
+    --blanco: #FFFFFF;
+}
+
+body {
+    background: var(--gris);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--negro);
+}
+
+.navbar {
+    background: var(--azul-marino) !important;
+    border-bottom: 4px solid var(--verde);
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-weight: 700;
+}
+
+    .nav-link:hover {
+        color: var(--verde) !important;
+    }
+
+.welcome-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-card {
+    background: white;
+    padding: 70px 90px;
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 20px 45px rgba(0,0,0,.25);
+    border-top: 8px solid var(--verde);
+}
+
+    .welcome-card h1 {
+        font-size: 5rem;
+        font-weight: 900;
+        color: var(--azul-marino);
+    }
+
+    .welcome-card p {
+        font-size: 1.3rem;
+        color: #4B5563;
+    }
+
+.page-card {
+    background: white;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+    border-top: 7px solid var(--verde);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+    .page-header h1 {
+        color: var(--azul-marino);
+        font-weight: 900;
+        margin: 0;
+    }
+
+    .page-header p {
+        margin: 4px 0 0;
+        color: #6B7280;
+    }
+
+.btn-main {
+    background: var(--verde);
+    color: white;
+    border: none;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 12px;
+}
+
+    .btn-main:hover {
+        background: var(--verde-hover);
+        color: white;
+        box-shadow: 0 8px 18px rgba(23,178,106,.25);
+    }
+
+.custom-table thead {
+    background: var(--azul-marino);
+    color: white;
+}
+
+    .custom-table thead th {
+        padding: 14px;
+    }
+
+.custom-table tbody td {
+    padding: 13px;
+    vertical-align: middle;
+}
+
+.custom-table tbody tr:hover {
+    background: #EAF8F0;
+}
+
+/* Modales */
 .modal-custom {
     border: none;
     border-radius: 20px;
@@ -6,14 +128,14 @@
 }
 
 .modal-header-custom {
-    background: linear-gradient(135deg, #071A2F, #0B2E59);
+    background: var(--azul-marino);
     color: white;
-    border-bottom: 4px solid #00B8C8;
+    border-bottom: 4px solid var(--verde);
     padding: 20px 24px;
 }
 
     .modal-header-custom small {
-        color: #BFEFF3;
+        color: #CDEFD9;
     }
 
 .modal-footer-custom {
@@ -28,12 +150,12 @@
 }
 
     .input-custom:focus {
-        border-color: #00B8C8;
-        box-shadow: 0 0 0 .2rem rgba(0, 184, 200, .18);
+        border-color: var(--verde);
+        box-shadow: 0 0 0 .2rem rgba(23, 178, 106, .18);
     }
 
 .btn-save {
-    background: linear-gradient(135deg, #00B8C8, #17B26A);
+    background: var(--verde);
     color: white;
     border: none;
     font-weight: 700;
@@ -42,8 +164,8 @@
 }
 
     .btn-save:hover {
+        background: var(--verde-hover);
         color: white;
-        transform: translateY(-1px);
     }
 
 .btn-cancel {
@@ -59,3 +181,7 @@
         background: #374151;
         color: white;
     }
+
+footer {
+    display: none;
+}

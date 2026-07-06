@@ -7,12 +7,15 @@
      aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow">
+        <div class="modal-content modal-custom">
 
-            <div class="modal-header bg-success text-white">
-                <h5 class="modal-title" id="labelModalCrearProducto">
-                    Nuevo Producto
-                </h5>
+            <div class="modal-header modal-header-custom">
+                <div>
+                    <h5 class="modal-title" id="labelModalCrearProducto">
+                        Nuevo Producto
+                    </h5>
+                    <small>Registra un producto médico en el inventario.</small>
+                </div>
 
                 <button type="button"
                         class="btn-close btn-close-white"
@@ -30,42 +33,54 @@
                     @Html.AntiForgeryToken()
 
                     <div class="mb-3">
-                        <label asp-for="Nombre" class="form-label"></label>
+                        <label asp-for="Nombre" class="form-label fw-bold">
+                            Nombre
+                        </label>
 
                         <input asp-for="Nombre"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="Ej: Guantes médicos" />
 
                         <span asp-validation-for="Nombre"
-                              class="text-danger"></span>
+                              class="text-danger small"></span>
                     </div>
 
                     <div class="mb-3">
-                        <label asp-for="Precio" class="form-label"></label>
+                        <label asp-for="Precio" class="form-label fw-bold">
+                            Precio
+                        </label>
 
                         <input asp-for="Precio"
                                type="number"
                                step="0.01"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="Ej: 2500" />
 
                         <span asp-validation-for="Precio"
-                              class="text-danger"></span>
+                              class="text-danger small"></span>
                     </div>
 
                     <div class="mb-3">
-                        <label asp-for="Stock" class="form-label"></label>
+                        <label asp-for="Stock" class="form-label fw-bold">
+                            Stock
+                        </label>
 
                         <input asp-for="Stock"
                                type="number"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="Ej: 50" />
 
                         <span asp-validation-for="Stock"
-                              class="text-danger"></span>
+                              class="text-danger small"></span>
                     </div>
 
                     <div class="mb-3">
-                        <label asp-for="IdCategoria" class="form-label"></label>
+                        <label asp-for="IdCategoria" class="form-label fw-bold">
+                            Categoría
+                        </label>
 
-                        <select asp-for="IdCategoria" class="form-select">
+                        <select asp-for="IdCategoria"
+                                class="form-select input-custom">
                             <option value="">-- Seleccione una categoría --</option>
 
                             @if (ViewBag.Categorias != null)
@@ -80,27 +95,26 @@
                         </select>
 
                         <span asp-validation-for="IdCategoria"
-                              class="text-danger"></span>
+                              class="text-danger small"></span>
                     </div>
 
                 </form>
 
             </div>
 
-            <div class="modal-footer">
+            <div class="modal-footer modal-footer-custom">
 
                 <button type="button"
-                        class="btn btn-secondary"
+                        class="btn btn-cancel"
                         data-bs-dismiss="modal">
-                    Cerrar
+                    Cancelar
                 </button>
 
                 <button type="button"
-                        class="btn btn-success"
+                        class="btn btn-save"
                         id="btnGuardarProducto">
                     Guardar
                 </button>
-
 
             </div>
 

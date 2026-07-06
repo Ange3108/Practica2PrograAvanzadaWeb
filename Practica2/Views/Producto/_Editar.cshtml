@@ -7,14 +7,17 @@
      aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow">
+        <div class="modal-content modal-custom">
 
-            <div class="modal-header bg-primary text-white">
+            <div class="modal-header modal-header-custom">
 
-                <h5 class="modal-title"
-                    id="labelModalEditarProducto">
-                    Editar Producto
-                </h5>
+                <div>
+                    <h5 class="modal-title"
+                        id="labelModalEditarProducto">
+                        Editar Producto
+                    </h5>
+                    <small>Actualice la información del producto.</small>
+                </div>
 
                 <button type="button"
                         class="btn-close btn-close-white"
@@ -32,73 +35,70 @@
 
                     @Html.AntiForgeryToken()
 
-                    <input asp-for="IdProducto"
-                           type="hidden" />
+                    <input asp-for="IdProducto" type="hidden" />
 
                     <div class="mb-3">
 
                         <label asp-for="Nombre"
-                               class="form-label">
+                               class="form-label fw-bold">
                             Nombre
                         </label>
 
                         <input asp-for="Nombre"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="Ingrese el nombre del producto" />
 
                         <span asp-validation-for="Nombre"
-                              class="text-danger">
-                        </span>
+                              class="text-danger small"></span>
 
                     </div>
 
                     <div class="mb-3">
 
                         <label asp-for="Precio"
-                               class="form-label">
+                               class="form-label fw-bold">
                             Precio
                         </label>
 
                         <input asp-for="Precio"
                                type="number"
                                step="0.01"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="0.00" />
 
                         <span asp-validation-for="Precio"
-                              class="text-danger">
-                        </span>
+                              class="text-danger small"></span>
 
                     </div>
 
                     <div class="mb-3">
 
                         <label asp-for="Stock"
-                               class="form-label">
+                               class="form-label fw-bold">
                             Stock
                         </label>
 
                         <input asp-for="Stock"
                                type="number"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="Cantidad disponible" />
 
                         <span asp-validation-for="Stock"
-                              class="text-danger">
-                        </span>
+                              class="text-danger small"></span>
 
                     </div>
 
                     <div class="mb-3">
 
                         <label asp-for="IdCategoria"
-                               class="form-label">
+                               class="form-label fw-bold">
                             Categoría
                         </label>
 
                         <select asp-for="IdCategoria"
-                                class="form-select">
+                                class="form-select input-custom">
 
-                            <option value="">
-                                -- Seleccione una categoría --
-                            </option>
+                            <option value="">-- Seleccione una categoría --</option>
 
                             @if (ViewBag.Categorias != null)
                             {
@@ -113,8 +113,7 @@
                         </select>
 
                         <span asp-validation-for="IdCategoria"
-                              class="text-danger">
-                        </span>
+                              class="text-danger small"></span>
 
                     </div>
 
@@ -122,16 +121,16 @@
 
             </div>
 
-            <div class="modal-footer">
+            <div class="modal-footer modal-footer-custom">
 
                 <button type="button"
-                        class="btn btn-secondary"
+                        class="btn btn-cancel"
                         data-bs-dismiss="modal">
-                    Cerrar
+                    Cancelar
                 </button>
 
                 <button type="button"
-                        class="btn btn-primary"
+                        class="btn btn-save"
                         id="btnEditarProducto">
                     Guardar cambios
                 </button>

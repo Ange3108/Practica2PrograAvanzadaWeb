@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\middleware\\middlewareglobalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:middleware\\middlewareglobalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\views\\categoria\\_editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:views\\categoria\\_editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\views\\categoria\\_crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:views\\categoria\\_crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|c:\\users\\maria\\onedrive\\documentos\\github\\practica2prograavanzadaweb\\practica2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88D43A83-114E-C696-15BA-77877A215F4B}|Practica2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,6 +87,110 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAuwLsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-06T03:33:58.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Categoria\\_Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categoria\\_Editar.cshtml",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Categoria\\_Editar.cshtml",
+              "RelativeToolTip": "Views\\Categoria\\_Editar.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAowGIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-06T03:33:31.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Categoria\\_Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categoria\\_Crear.cshtml",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Categoria\\_Crear.cshtml",
+              "RelativeToolTip": "Views\\Categoria\\_Crear.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowFcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-06T03:32:08.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Categoria\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categoria\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Categoria\\Index.cshtml",
+              "RelativeToolTip": "Views\\Categoria\\Index.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-06T03:31:29.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-06T03:28:09.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-06T03:27:38.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MiddlewareGlobalExceptionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\MiddleWare\\MiddlewareGlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "MiddleWare\\MiddlewareGlobalExceptionHandler.cs",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\MiddleWare\\MiddlewareGlobalExceptionHandler.cs",
+              "RelativeToolTip": "MiddleWare\\MiddlewareGlobalExceptionHandler.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAzwCAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T03:12:37.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\Documentos\\GitHub\\Practica2PrograAvanzadaWeb\\Practica2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T03:15:14.837Z",
+              "EditorCaption": ""
             }
           ]
         }
