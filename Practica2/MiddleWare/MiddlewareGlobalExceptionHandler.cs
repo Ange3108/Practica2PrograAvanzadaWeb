@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace WebAvanzadaIICuatrimestre.Middleware
+namespace Practica2.MiddleWare 
 {
     public class MiddlewareGlobalExceptionHandler
     {

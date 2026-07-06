@@ -7,12 +7,15 @@
      aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow">
+        <div class="modal-content modal-custom">
 
-            <div class="modal-header bg-success text-white">
-                <h5 class="modal-title" id="labelModalCrearCategoria">
-                    Nueva Categoría
-                </h5>
+            <div class="modal-header modal-header-custom">
+                <div>
+                    <h5 class="modal-title" id="labelModalCrearCategoria">
+                        Nueva Categoría
+                    </h5>
+                    <small>Registra una nueva categoría médica</small>
+                </div>
 
                 <button type="button"
                         class="btn-close btn-close-white"
@@ -30,29 +33,32 @@
                     @Html.AntiForgeryToken()
 
                     <div class="mb-3">
-                        <label asp-for="Nombre" class="form-label">
+                        <label asp-for="Nombre" class="form-label fw-bold">
                             Nombre
                         </label>
 
                         <input asp-for="Nombre"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="Ej: Equipo médico" />
 
                         <span asp-validation-for="Nombre"
-                              class="text-danger">
+                              class="text-danger small">
                         </span>
                     </div>
 
                     <div class="mb-3">
                         <label asp-for="Descripcion"
-                               class="form-label">
+                               class="form-label fw-bold">
                             Descripción
                         </label>
 
                         <textarea asp-for="Descripcion"
-                                  class="form-control"></textarea>
+                                  class="form-control input-custom"
+                                  rows="4"
+                                  placeholder="Ingrese una descripción breve"></textarea>
 
                         <span asp-validation-for="Descripcion"
-                              class="text-danger">
+                              class="text-danger small">
                         </span>
                     </div>
 
@@ -60,16 +66,16 @@
 
             </div>
 
-            <div class="modal-footer">
+            <div class="modal-footer modal-footer-custom">
 
                 <button type="button"
-                        class="btn btn-secondary"
+                        class="btn btn-cancel"
                         data-bs-dismiss="modal">
-                    Cerrar
+                    Cancelar
                 </button>
 
                 <button type="button"
-                        class="btn btn-success"
+                        class="btn btn-save"
                         id="btnGuardarCategoria">
                     Guardar
                 </button>

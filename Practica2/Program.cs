@@ -6,6 +6,7 @@ using Practica2.DAL.Data;
 using Practica2.DAL.Repository;
 using Practica2.DAL.Repository.Categoria;
 using Practica2.DAL.Repository.Producto;
+using Practica2.MiddleWare;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,6 +55,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+app.UseMiddleware<MiddlewareGlobalExceptionHandler>();
 
 app.UseAuthorization();
 

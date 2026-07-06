@@ -22,11 +22,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
 
-                <a class="navbar-brand"
-                   asp-controller="Home"
-                   asp-action="Index">
-                    Practica2
-                </a>
+                <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">Inventario Médico</a>
 
                 <button class="navbar-toggler"
                         type="button"
@@ -45,27 +41,15 @@
                     <ul class="navbar-nav flex-grow-1">
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark"
-                               asp-controller="Home"
-                               asp-action="Index">
-                                Home
-                            </a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark"
-                               asp-controller="Producto"
-                               asp-action="Index">
-                                Productos
-                            </a>
+                            <a class="nav-link" asp-controller="Categoria" asp-action="Index">Categorías</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark"
-                               asp-controller="Categoria"
-                               asp-action="Index">
-                                Categorías
-                            </a>
+                            <a class="nav-link" asp-controller="Producto" asp-action="Index">Productos</a>
                         </li>
 
                     </ul>

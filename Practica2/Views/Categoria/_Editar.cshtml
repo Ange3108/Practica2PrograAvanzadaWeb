@@ -7,14 +7,18 @@
      aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow">
+        <div class="modal-content modal-custom">
 
-            <div class="modal-header bg-primary text-white">
+            <div class="modal-header modal-header-custom">
 
-                <h5 class="modal-title"
-                    id="labelModalEditarCategoria">
-                    Editar Categoría
-                </h5>
+                <div>
+                    <h5 class="modal-title"
+                        id="labelModalEditarCategoria">
+                        Editar Categoría
+                    </h5>
+
+                    <small>Actualice la información de la categoría.</small>
+                </div>
 
                 <button type="button"
                         class="btn-close btn-close-white"
@@ -32,21 +36,21 @@
 
                     @Html.AntiForgeryToken()
 
-                    <input asp-for="IdCategoria"
-                           type="hidden" />
+                    <input asp-for="IdCategoria" type="hidden" />
 
                     <div class="mb-3">
 
                         <label asp-for="Nombre"
-                               class="form-label">
+                               class="form-label fw-bold">
                             Nombre
                         </label>
 
                         <input asp-for="Nombre"
-                               class="form-control" />
+                               class="form-control input-custom"
+                               placeholder="Ingrese el nombre" />
 
                         <span asp-validation-for="Nombre"
-                              class="text-danger">
+                              class="text-danger small">
                         </span>
 
                     </div>
@@ -54,16 +58,17 @@
                     <div class="mb-3">
 
                         <label asp-for="Descripcion"
-                               class="form-label">
+                               class="form-label fw-bold">
                             Descripción
                         </label>
 
                         <textarea asp-for="Descripcion"
-                                  class="form-control">
-                        </textarea>
+                                  rows="4"
+                                  class="form-control input-custom"
+                                  placeholder="Ingrese la descripción"></textarea>
 
                         <span asp-validation-for="Descripcion"
-                              class="text-danger">
+                              class="text-danger small">
                         </span>
 
                     </div>
@@ -72,16 +77,16 @@
 
             </div>
 
-            <div class="modal-footer">
+            <div class="modal-footer modal-footer-custom">
 
                 <button type="button"
-                        class="btn btn-secondary"
+                        class="btn btn-cancel"
                         data-bs-dismiss="modal">
-                    Cerrar
+                    Cancelar
                 </button>
 
                 <button type="button"
-                        class="btn btn-primary"
+                        class="btn btn-save"
                         id="btnEditarCategoria">
                     Guardar cambios
                 </button>
